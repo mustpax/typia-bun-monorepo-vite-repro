@@ -1,0 +1,18 @@
+{
+  "name": "moose-plays-with-bun-monorepos",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "common"
+  ],
+  "scripts": {
+    "start": "bun run -b backend start",
+    "dev": "bun run -F '*' dev"
+  },
+  "dependencies": {
+    "@ryoppippi/unplugin-typia": "^1.2.0",
+    "typia": "^7.6.0"
+  }
+}

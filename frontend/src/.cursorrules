@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "development_guidelines": {
+      "description": "Guidelines for developing code with shadcn/ui, TypeScript, and TailwindCSS.",
+      "enabled": true,
+      "rules": [
+        {
+          "description": "Enforce strict TypeScript settings, ensuring type safety across the project."
+        },
+        {
+          "description": "Use TailwindCSS for styling following shadcn/ui's design system and utility-first approach."
+        },
+        {
+          "description": "Follow shadcn/ui component patterns and best practices for UI."
+        },
+        {
+          "description": "Customize shadcn/ui components using the provided configuration options rather than direct modifications."
+        },
+        {
+          "description": "Maintain a clean component architecture using shadcn/ui's modular component system."
+        }
+      ]
+    }
+  }
+}
