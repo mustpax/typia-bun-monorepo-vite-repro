@@ -13,7 +13,6 @@
     "dev": "bun run -F '*' dev"
   },
   "dependencies": {
-    "@ryoppippi/unplugin-typia": "^1.2.0",
     "typia": "^7.6.0"
   }
 }
