@@ -1,0 +1,33 @@
+{
+  "name": "unplugin-typia-monorepo",
+  "type": "module",
+  "description": "",
+  "author": "ryoppippi",
+  "license": "MIT",
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "lint": "bun run --filter '*' lint",
+    "format": "bun run --filter '*' format",
+    "test": "bun run --filter '*' test",
+    "deploy": "bun run --filter '*' deploy",
+    "preinstall": "npx only-allow bun",
+    "taze": "bun x taze -r"
+  },
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
+  "trustedDependencies": [
+    "@sveltejs/kit",
+    "esbuild",
+    "nextjs",
+    "svelte-preprocess",
+    "sveltekit",
+    "vite-hono",
+    "vite-react",
+    "vite-vanilla",
+    "workerd"
+  ],
+  "packageManager": "bun@1.1.38",
+  "private": true
+}

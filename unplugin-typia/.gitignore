@@ -1,0 +1,19 @@
+# misc
+.DS_Store
+.turbo/
+.wrangler/
+
+# build artifacts
+dist
+
+# node
+node_modules
+
+# npm
+npm-debug.log
+
+# yarn
+yarn-error.log
+
+# eslint cache
+.eslintcache

@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "private": true,
+  "name": "vite-hono",
+  "scripts": {
+    "dev": "bun -b vite",
+    "build": "bun -b vite build",
+    "preview": "bun -b vite dev",
+    "deploy": "bun run build && npx wrangler pages deploy",
+    "prepare": "ts-patch install && typia patch"
+  },
+  "dependencies": {
+    "hono": "^4.6.20",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@hono/typia-validator": "^0.0.5",
+    "@hono/vite-cloudflare-pages": "^0.4.2",
+    "@hono/vite-dev-server": "^0.17.0",
+    "@ryoppippi/unplugin-typia": "workspace:*",
+    "ts-patch": "^3.2.1",
+    "typescript": "~5.7.2",
+    "typia": "^7.6.3",
+    "vite": "^6.0.2"
+  }
+}
