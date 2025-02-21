@@ -169,10 +169,6 @@ const unpluginFactory: UnpluginFactory<
 		},
 
 		buildStart() {
-			log(
-				'box',
-				'moose was here',
-			);
 			if (logOption !== false) {
 				log(
 					'box',
@@ -213,7 +209,9 @@ const unpluginFactory: UnpluginFactory<
 				return;
 			}
 
-			return generateCodeWithMap({ source, code, id });
+			const ret = generateCodeWithMap({ source, code, id });
+			log('info', ret?.code ?? 'no code');
+			return ret;
 		},
 	};
 };
