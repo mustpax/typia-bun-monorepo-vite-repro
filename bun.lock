@@ -10,6 +10,7 @@
     "backend": {
       "name": "obs-overlay-backend",
       "dependencies": {
+        "@ryoppippi/unplugin-typia": "workspace:*",
         "@types/express": "^5.0.0",
         "common": "workspace:*",
         "express": "^4.21.2",
