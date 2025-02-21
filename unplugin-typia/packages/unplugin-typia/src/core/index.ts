@@ -169,6 +169,10 @@ const unpluginFactory: UnpluginFactory<
 		},
 
 		buildStart() {
+			log(
+				'box',
+				'moose was here',
+			);
 			if (logOption !== false) {
 				log(
 					'box',
