@@ -5,7 +5,8 @@
   "workspaces": [
     "frontend",
     "backend",
-    "common"
+    "common",
+    "unplugin-typia/packages/*"
   ],
   "scripts": {
     "start": "bun run -b backend start",
