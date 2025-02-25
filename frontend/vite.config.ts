@@ -4,7 +4,10 @@ import UnpluginTypia from "@ryoppippi/unplugin-typia/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [UnpluginTypia({}), react()],
+  plugins: [
+    UnpluginTypia({ log: false, tsconfig: "./tsconfig.app.json" }),
+    react(),
+  ],
   resolve: {
     alias: {
       "@": "/src",
