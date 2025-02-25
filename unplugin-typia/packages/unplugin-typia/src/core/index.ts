@@ -123,6 +123,9 @@ const unpluginFactory: UnpluginFactory<
 		using cache = cacheOptions ? new Cache(id, source) : undefined;
 		let code = cache?.data;
 
+		log('info', 'moose Cache status:');
+		log('info', `moose Cache path: ${cache?.hashPath}`);
+		log('info', `moose Cache data: ${code != null ? 'exists' : 'does not exist'}`);
 		if (showLog) {
 			if (code != null) {
 				log('success', `Cache hit: ${id}`);
@@ -210,7 +213,6 @@ const unpluginFactory: UnpluginFactory<
 			}
 
 			const ret = generateCodeWithMap({ source, code, id });
-			log('info', ret?.code ?? 'no code');
 			return ret;
 		},
 	};

@@ -44,6 +44,10 @@ export class Cache {
 		return this.#data;
 	}
 
+	get hashPath() {
+		return this.#hashPath;
+	}
+
 	/**
 	 * Set cache data
 	 */
